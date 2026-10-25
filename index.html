@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101114">
+  <meta name="description" content="NEXORA — thoughtfully selected everyday tech, accessories, and lifestyle essentials.">
+  <title>NEXORA — Curated essentials, elevated</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> WEEKEND EDIT · Complimentary delivery on orders over ₹1,499</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="NEXORA home"><span class="brand-mark">N</span><span>NEXORA<span class="brand-period">.</span></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#shop">Shop all</a><a href="#shop" data-nav-category="Electronics">Tech</a><a href="#shop" data-nav-category="Lifestyle">Lifestyle</a><a href="#about">Our story</a>
+    </nav>
+    <div class="header-actions">
+      <label class="search-box" aria-label="Search products"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search essentials…" autocomplete="off"></label>
+      <button class="icon-button cart-trigger" id="openCartBtn" aria-label="Open shopping cart">▱<span id="cartBadge" class="cart-badge">0</span></button>
+      <button class="icon-button menu-trigger" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> THE EVERYDAY EDIT · VOL. 04</p>
+        <h1>Good things.<br><span>Better living.</span></h1>
+        <p class="hero-description">Considered essentials for your desk, your downtime, and everywhere in between. Less noise. More of what matters.</p>
+        <a class="primary-button" href="#shop">Explore the collection <span aria-hidden="true">↗</span></a>
+        <div class="hero-proof"><div class="proof-avatars"><span>✦</span><span>✳</span><span>◈</span></div><p><strong>Thoughtfully selected</strong><br><small>Everyday upgrades, made simple.</small></p></div>
+      </div>
+      <div class="hero-art" aria-label="Featured headphones and everyday tech">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-label label-top">OBJECTS FOR BETTER DAYS <span>↗</span></div>
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=85" alt="Premium wireless headphones" class="hero-product" onerror="this.style.display='none';this.parentElement.classList.add('image-fallback')">
+        <div class="hero-sticker"><span>CURATED</span><strong>NOT<br>CLUTTERED.</strong><span>EST. 2026</span></div>
+        <div class="hero-label label-bottom">DESIGN MEETS DAILY LIFE <span>✳</span></div>
+      </div>
+      <div class="hero-index"><span>01</span><span class="index-line"></span><span>03</span></div>
+    </section>
+
+    <section class="benefit-strip" aria-label="Store benefits">
+      <div><span class="benefit-icon">✳</span><span><strong>Curated quality</strong><small>Chosen with intention</small></span></div>
+      <div><span class="benefit-icon">↗</span><span><strong>Easy returns</strong><small>Simple, stress-free shopping</small></span></div>
+      <div><span class="benefit-icon">◇</span><span><strong>Secure by design</strong><small>Your details stay yours</small></span></div>
+      <div><span class="benefit-icon">⌁</span><span><strong>Thoughtful pricing</strong><small>Value in every detail</small></span></div>
+    </section>
+
+    <section class="shop-section section-wrap" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE NEXORA SELECTION</p><h2>Find your <span>everyday upgrade.</span></h2></div>
+        <p class="section-side-note">Useful by design.<br>Made to fit your life.</p>
+      </div>
+      <div class="catalog-controls">
+        <div id="categoryFilters" class="category-filters" aria-label="Filter products by category">
+          <button class="filter-chip active" data-category="All Products">All products <span id="allCount">08</span></button>
+          <button class="filter-chip" data-category="Electronics">Electronics</button>
+          <button class="filter-chip" data-category="Accessories">Accessories</button>
+          <button class="filter-chip" data-category="Lifestyle">Lifestyle</button>
+          <button class="filter-chip" data-category="Home">Home</button>
+        </div>
+        <label class="sort-control">Sort by <select id="sortSelect" aria-label="Sort products"><option value="featured">Featured</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="rating">Top rated</option></select></label>
+      </div>
+      <div class="results-line"><span id="resultsCount">Showing 8 considered essentials</span><span class="live-indicator"><i></i> LIVE COLLECTION</span></div>
+      <div id="productGrid" class="product-grid" aria-live="polite"></div>
+      <div id="noResults" class="no-results" hidden><span>⌕</span><h3>No matches just yet.</h3><p>Try another search or reset your filters.</p><button class="secondary-button" id="resetFiltersBtn">Reset filters</button></div>
+    </section>
+
+    <section class="editorial section-wrap" id="about">
+      <div class="editorial-mark">N<span>.</span></div>
+      <div><p class="eyebrow">A LITTLE LESS, A LITTLE BETTER</p><h2>Make room for<br><span>what matters.</span></h2></div>
+      <p>We believe the best everyday objects earn their place. NEXORA brings together useful design, considered details, and essentials that make ordinary routines feel a little more intentional.</p>
+      <a href="#shop" class="text-link">Meet the collection <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#"><span class="brand-mark">N</span><span>NEXORA<span class="brand-period">.</span></span></a>
+    <p>Thoughtful essentials for better everyday living.</p>
+    <span class="footer-note">A DEMO STOREFRONT · BUILT WITH VANILLA JS</span>
+    <span class="copyright">© 2026 NEXORA Studio</span>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="drawer-header"><div><p class="eyebrow">YOUR SELECTION</p><h2 id="cartTitle">Shopping bag <span id="drawerCount">(0)</span></h2></div><button class="icon-button close-drawer" id="closeCartBtn" aria-label="Close cart">×</button></div>
+    <div class="cart-progress"><div class="progress-track"><span id="shippingProgress"></span></div><p id="shippingMessage">Add items to begin your order.</p></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div id="cartEmpty" class="cart-empty"><div class="empty-bag">▱</div><h3>Your bag is taking a breather.</h3><p>Find something useful and make it yours.</p><button class="primary-button" id="continueShoppingBtn">Explore products ↗</button></div>
+    <div class="cart-summary" id="cartSummary">
+      <div class="summary-row"><span>Subtotal</span><strong id="subtotalValue">₹0.00</strong></div>
+      <div class="summary-row discount-row"><span>Collection discount</span><strong id="discountValue">−₹0.00</strong></div>
+      <div class="summary-row"><span>Estimated tax (5%)</span><strong id="taxValue">₹0.00</strong></div>
+      <div class="summary-row total-row"><span>Total</span><strong id="totalValue">₹0.00</strong></div>
+      <p class="tax-note">Demo pricing only. Delivery calculated at checkout.</p>
+      <button class="checkout-button" id="checkoutBtn">Review demo checkout <span>↗</span></button>
+      <button class="clear-cart-button" id="clearCartBtn">Clear bag</button>
+    </div>
+  </aside>
+
+  <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+  <dialog id="checkoutDialog" class="checkout-dialog">
+    <button class="icon-button dialog-close" id="closeCheckoutBtn" aria-label="Close dialog">×</button>
+    <div class="dialog-symbol">✓</div><p class="eyebrow">DEMO CHECKOUT</p><h2>Looking good.</h2>
+    <p id="checkoutMessage">Your demo order summary is ready.</p>
+    <p class="dialog-disclaimer">This is a simulated checkout for the internship project. No payment or order is processed.</p>
+    <button class="primary-button" id="finishCheckoutBtn">Back to shopping</button>
+  </dialog>
+</body>
+</html>
